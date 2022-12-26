@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.reference-text {
+  position: relative;
+  width: 90vw;
+  margin: 2rem auto;
+}
+
+.reference-text span {
+  position: relative;
+  display: inline-block;
+  border: 1px solid transparent;
+  padding: 0 2px;
+  /* margin: 0 5px; */
+  border-bottom: 2px solid grey;
+  font-size: 2.4rem;
+}
+
+/* media query for mobile */
+@media (max-width: 768px) {
+  .reference-text {
+    width: 95vw;
+  }
+
+  .reference-text  span{
+    font-size: 1rem;
+  }
+}
+
+.reference-text span.correct {
+ border-bottom: 2px solid green;
+ background: rgba(38, 255, 0, 0.142);
+}
+
+.reference-text span.incorrect {
+  border-bottom: 2px solid rgb(128, 0, 0);
+  background: rgba(255, 0, 0, 0.142);
+}
+
+
